@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="add-bg" prefHeight="359.0" prefWidth="386.0" stylesheets="@add.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddController">
+   <children>
+      <Label layoutX="138.0" layoutY="14.0" text="Adding new user...">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userName" layoutX="121.0" layoutY="80.0" promptText="Name" stylesheets="@add.css" />
+      <TextField fx:id="userLastName" layoutX="121.0" layoutY="119.0" promptText="LastName" stylesheets="@add.css" />
+      <TextField fx:id="userID" layoutX="121.0" layoutY="41.0" promptText="ID" stylesheets="@add.css" />
+      <Button id="dark-blue" fx:id="buttonAddUser" layoutX="162.0" layoutY="296.0" mnemonicParsing="false" stylesheets="@add.css" text="Add" textOverrun="CENTER_WORD_ELLIPSIS" />
+      <TextField fx:id="userLevelOfLanguage" layoutX="121.0" layoutY="159.0" promptText="Level of language " stylesheets="@add.css" />
+      <ImageView fitHeight="100.0" fitWidth="132.0" layoutX="-11.0">
+         <image>
+            <Image url="@img/user2.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="userComfortTime" layoutX="121.0" layoutY="203.0" promptText="Comfort time" stylesheets="@add.css" />
+      <Label fx:id="labelErrorAdd" layoutX="102.0" layoutY="262.0" text="You should fill all information!" />
+   </children>
+</AnchorPane>
